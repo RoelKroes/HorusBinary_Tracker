@@ -40,6 +40,7 @@ Be sure to use the latest versions.
 Download the code and unzip in a folder with the name horusbinary_tracker. 
 Load horusbinary_tracker.ino in your Arduino IDE. 
 The tracker can be programmed by changing the values in settings.h. Instructions are also in there.
+
 And as always, use at your own risk.
 
 Have Fun!
