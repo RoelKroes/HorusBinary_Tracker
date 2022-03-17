@@ -8,17 +8,18 @@ Note that this tracker is still very much experimental.
 
 # Decoding
 The packages can be decoded and uploaded using a SSB receiver and software such as Horusbinary GUI and uploaded to the HabHub tracker
-Horusbinary Gui: https://github.com/projecthorus/horus-gui
-Habhub tracking page: https://tracker.habhub.org/
-horusdemodlib: https://github.com/projecthorus/horusdemodlib/wiki
+* Horusbinary Gui: https://github.com/projecthorus/horus-gui
+* Habhub tracking page: https://tracker.habhub.org/
+* horusdemodlib: https://github.com/projecthorus/horusdemodlib/wiki
 
 # Code used
 The radio related basecode for this sketch was taken from the horusbinary_radiolib project.
-See: https://github.com/projecthorus/horusbinary_radiolib
+* See: https://github.com/projecthorus/horusbinary_radiolib
 
 # Prerequisites
 To use this tracker in a balloon, you need to request your own Payload ID. 
 For that refer to: https://github.com/projecthorus/horusdemodlib/blob/master/payload_id_list.txt 
+
 You will also need to set up a Habitat Payload Document, so that the payload telemetry appears on the HabHub tracker.
 Refer to: http://habitat.habhub.org/genpayload/
 
@@ -31,9 +32,9 @@ To run this, you need the following hardware:
 
 # Libraries needed
 You need the following libraries to compile this sketch:
-https://github.com/jgromes/RadioLib (Radiolib)
-https://github.com/mikalhart/TinyGPSPlus (tinyGPS++)
-Be sure to use the latest versions
+* https://github.com/jgromes/RadioLib (Radiolib)
+* https://github.com/mikalhart/TinyGPSPlus (tinyGPS++)
+Be sure to use the latest versions.
 
 # settings.h
 Download the code and unzip in a folder with the name horusbinary_tracker. 
