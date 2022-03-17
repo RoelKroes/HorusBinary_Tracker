@@ -34,6 +34,7 @@ To run this, you need the following hardware:
 You need the following libraries to compile this sketch:
 * https://github.com/jgromes/RadioLib (Radiolib)
 * https://github.com/mikalhart/TinyGPSPlus (tinyGPS++)
+
 Be sure to use the latest versions.
 
 # settings.h
