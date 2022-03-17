@@ -25,9 +25,9 @@ Refer to: http://habitat.habhub.org/genpayload/
 # Hardware needed
 To run this, you need the following hardware:
 
-1 x Arduino Pro Mini - 3.3v (or compatible Arduino board)
-1 x SX1278 LoRa chip (or compatible LoRa chip. Basically it will work with all sx127x series and Hope RFM9x chips)
-1 x ATGM336H GPS or any UBlox or compatible GPS device like a NEO6 or NEO8. I recommend the ATGM336H GPS module.
+* 1 x Arduino Pro Mini - 3.3v (or compatible Arduino board)
+* 1 x SX1278 LoRa chip (or compatible LoRa chip. Basically it will work with all sx127x series and Hope RFM9x chips)
+* 1 x ATGM336H GPS or any UBlox or compatible GPS device like a NEO6 or NEO8. I recommend the ATGM336H GPS module.
 
 # Libraries needed
 You need the following libraries to compile this sketch:
