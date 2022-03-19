@@ -104,5 +104,5 @@ void fsk4_write(PhysicalLayer* phy, uint8_t* buff, size_t len){
     n += fsk4_writebyte(phy, buff[i]);
   }
   fsk4_standby(phy);
-  return(n);
+  return;
 }
