@@ -353,7 +353,7 @@ if (USE_V2)
 }  // end of V2
 
   
-  delay(TX_DELAY);
+  smartDelay(TX_DELAY);
 
   packet_count++;
 
