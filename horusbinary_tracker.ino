@@ -270,7 +270,7 @@ void loop()
   // We need to do this here as having communication on all the time,
   // slows the processor and gives instability
   SerialGPS.begin(GPSBaud); 
-  smartDelay(1000);
+  smartDelay(TX_DELAY);
   CheckGPS(); 
   SerialGPS.end();
 
@@ -351,9 +351,6 @@ if (USE_V2)
   fsk4_preamble(&radio, 8);
   fsk4_write(&radio, codedbuffer, coded_len);
 }  // end of V2
-
-  
-  smartDelay(TX_DELAY);
 
   packet_count++;
 
