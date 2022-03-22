@@ -83,13 +83,13 @@ struct TGPS
 struct HorusBinaryPacketV1
 {
     uint8_t     PayloadID;    // Refer to  https://github.com/projecthorus/horusdemodlib/blob/master/payload_id_list.txt
-    uint16_t	  Counter;      // Packet counter 
-    uint8_t	    Hours;        // Hours Zulu
-    uint8_t	    Minutes;      // Minutes
-    uint8_t	    Seconds;      // Seconds
-    float	      Latitude;     // Latitude in format xx.yyyy
-    float	      Longitude;    // Longitude in format xx.yyyy
-    uint16_t  	Altitude;     // Altitude in meters
+    uint16_t    Counter;      // Packet counter 
+    uint8_t     Hours;        // Hours Zulu
+    uint8_t     Minutes;      // Minutes
+    uint8_t     Seconds;      // Seconds
+    float       Latitude;     // Latitude in format xx.yyyy
+    float       Longitude;    // Longitude in format xx.yyyy
+    uint16_t    Altitude;     // Altitude in meters
     uint8_t     Speed;        // Speed in kmh
     uint8_t     Sats;         // Number of satellites visible
     int8_t      Temp;         // Twos Complement Temp value.
@@ -101,13 +101,13 @@ struct HorusBinaryPacketV1
 struct HorusBinaryPacketV2
 {
     uint16_t    PayloadID;    // Refer to  https://github.com/projecthorus/horusdemodlib/blob/master/payload_id_list.txt 
-    uint16_t	  Counter;      // Packet counter 
-    uint8_t	    Hours;        // Hours Zulu
-    uint8_t	    Minutes;      // Minutes
-    uint8_t	    Seconds;      // Seconds
-    float	      Latitude;     // Latitude in format xx.yyyy
-    float	      Longitude;    // Longitude in format xx.yyyy
-    uint16_t  	Altitude;     // Altitude in meters
+    uint16_t    Counter;      // Packet counter 
+    uint8_t     Hours;        // Hours Zulu
+    uint8_t     Minutes;      // Minutes
+    uint8_t     Seconds;      // Seconds
+    float       Latitude;     // Latitude in format xx.yyyy
+    float       Longitude;    // Longitude in format xx.yyyy
+    uint16_t    Altitude;     // Altitude in meters
     uint8_t     Speed;        // Speed in kmh
     uint8_t     Sats;         // Number of satellites visible 
     int8_t      Temp;         // Twos Complement Temp value.
@@ -224,6 +224,7 @@ void setup()
     while(true);
   }
 
+state = radio.setOutputPower(RF_POWER);
 
 #if defined(DEVMODE) 
   Serial.print(F("[FSK4] Initializing ... "));
