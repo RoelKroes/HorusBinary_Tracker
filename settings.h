@@ -43,7 +43,7 @@
 #define RF_POWER        13     // In dBm. Valid values +2 to +17 dBm. 10dBm = 10mW, 13dBm=20mW
 #define FSK4_BAUD       100    // recommended 100 baud
 #define FSK4_SPACING    270    // NOTE: This results in a shift of 244 Hz due to the PLL Resolution of the SX127x which is 61Hz
-#define TX_DELAY        30000  // Delay in ms between transmissions. Add about 7sec to this to get the true delay between to transmissions
+#define TX_DELAY        30000  // Delay in ms between transmissions. 
 
 
 /***********************************************************************************
