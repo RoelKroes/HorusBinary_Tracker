@@ -19,7 +19,7 @@
 #define PAYLOAD_ID_V2  256
 
 //**********************************************************************************
-// Choose between Horusbinary V1 or V2
+// Choose between Horusbinary V1 or V2 or both
 //**********************************************************************************
 #define USE_V1 false   // Set to false for no V1 transmissions
 #define USE_V2 true  // Set to false for no V2 transmissions
