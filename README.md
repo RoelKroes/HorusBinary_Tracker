@@ -42,6 +42,9 @@ Download the code and unzip in a folder with the name horusbinary_tracker.
 Load horusbinary_tracker.ino in your Arduino IDE. 
 The tracker can be programmed by changing the values in settings.h. Instructions are also in there.
 
+# uBlox GPS modules
+Note that currently setting different flightmodes in uBlox GPS modules is not supported. This could cause GPS failures above 18km when using uBlox GPS modules. I recommend using the ATGM336H GPS modules.
+
 And as always, use at your own risk.
 
 Have Fun!
