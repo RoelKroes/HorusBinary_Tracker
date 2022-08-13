@@ -15,8 +15,8 @@
 //
 // If you do not have a payload ID, you can use 0 (=4FSKTEST) for V1 and 256 (=4FSKTEST-V2) for V2
 //**********************************************************************************
-#define PAYLOAD_ID_V1  107
-#define PAYLOAD_ID_V2  293
+#define PAYLOAD_ID_V1  0
+#define PAYLOAD_ID_V2  256
 
 //**********************************************************************************
 // Choose between Horusbinary V1 or V2
