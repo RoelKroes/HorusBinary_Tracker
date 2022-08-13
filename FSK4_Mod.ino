@@ -60,11 +60,15 @@ void fsk4_tone(PhysicalLayer* phy, uint8_t i)
 {
   uint32_t start = micros();
   fsk4_transmitDirect(phy, fsk4_base + fsk4_tones[i]);
-  //delayMicroseconds(fsk4_bitDuration);
+  // delayMicroseconds(fsk4_bitDuration);
+  /*
   while( micros() - start < fsk4_bitDuration) 
   {
     yield();
   }
+  */
+  execute = false;
+  while (!execute);
 }
 
 void fsk4_idle(PhysicalLayer* phy){

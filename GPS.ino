@@ -3,7 +3,6 @@
 
 // The TinyGPS++ object
 TinyGPSPlus gps;
-uint16_t Max_Altitude = 0;
 
 /*********************************************************************************************************************************/
 void CheckGPS()
@@ -68,8 +67,6 @@ static void processGPSData()
  else
     UGPS.Altitude = 5;    
 
- if (UGPS.Altitude > Max_Altitude) Max_Altitude = UGPS.Altitude;
- 
  if (UGPS.Altitude < 0)
    UGPS.Altitude = 5;    
 
@@ -79,7 +76,7 @@ static void processGPSData()
  }
 
  // Chip temperature
- UGPS.Temp = ReadTemp();  
+ UGPS.Temp = ReadTemp() + tempOffset;  
  // Chip VCC
  UGPS.Internal_VCC = ReadVCC(); 
 }
@@ -95,7 +92,6 @@ void printGPSData()
   Serial.print(F("    Longitude: ")); Serial.println(UGPS.Longitude, 6);
   Serial.print(F(" Altitude (m): ")); Serial.println(UGPS.Altitude);
   Serial.print(F("   Satellites: ")); Serial.println(UGPS.Satellites);
-  Serial.print(F(" Max Altitude: ")); Serial.println(Max_Altitude);
   Serial.println(F("-------------------------"));
   Serial.println();
 #endif

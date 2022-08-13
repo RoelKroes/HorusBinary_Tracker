@@ -4,6 +4,8 @@
  *  Have FUN!
  *  
  *  Roel Kroes - PD7R - March 2022
+ *  
+ *  Latest change in this version is:  13 august 2022.
  ***********************************************************************************/
 
 /*************************************************************************************************************
@@ -60,6 +62,7 @@
 #include <SoftwareSerial.h>
 #include "horus_l2.h"
 #include "settings.h"
+#include "timing.h"
 
 
 // Initialize the radio
@@ -195,6 +198,11 @@ int build_horus_binary_packet_v2(char *buffer)
 //*********************************************************************************************************************
 void setup() 
 {
+
+pinMode(5, OUTPUT);
+pinMode(6, OUTPUT);
+digitalWrite(5, HIGH);
+digitalWrite(6, HIGH);
   
 #if defined(DEVMODE) 
   // Initialize the Serial console
@@ -227,7 +235,7 @@ void setup()
 state = radio.setOutputPower(RF_POWER);
 
 #if defined(DEVMODE) 
-  Serial.print(F("[FSK4] Initializing ... "));
+  Serial.print(F("[FSK4] Initializing ... ")); 
 #endif
 
   // initialize FSK4 transmitter
@@ -256,6 +264,10 @@ state = radio.setOutputPower(RF_POWER);
 #endif
     while(true);
   }
+
+  // Setup the interrupt timer
+
+  setup_timer(BITDURATION_DELAY);
 }
 
 
