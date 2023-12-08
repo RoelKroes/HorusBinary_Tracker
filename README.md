@@ -35,8 +35,6 @@ You need the following libraries to compile this sketch:
 * https://github.com/jgromes/RadioLib (Radiolib, use v5.5.0 or earlier if you have an Arduino Pro Mini and you want to use 4FSK Horusbinary V2. This is necessary because of memory constraints)
 * https://github.com/mikalhart/TinyGPSPlus (tinyGPS++)
 
-Be sure to use the latest versions.
-
 # settings.h
 Download the code and unzip in a folder with the name horusbinary_tracker. 
 Load horusbinary_tracker.ino in your Arduino IDE. 
